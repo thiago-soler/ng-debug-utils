@@ -1,0 +1,9 @@
+{
+  "name": "ng-debug-utils",
+  "version": "0.0.1",
+  "dependencies": {},
+  "devDependencies": {},
+  "appPath": "src",
+  "main": "./dist/ng-debug-utils.js",
+  "moduleName": "ngDebugUtils"
+}
