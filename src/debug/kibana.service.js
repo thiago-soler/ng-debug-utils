@@ -1,12 +1,12 @@
 'use strict';
 
-angular.module('ngDebugUtils.debug', ['ngDebugUtils']).service('kibana', function($http){
+angular.module('ngDebugUtils.debug', ['ngDebugUtils']).service('kibana', function(){
 	
 	var $public = this;
 
 	$public.showConsole = function () {
 
-		console.log('showConsole ', $http);
+		console.warn('Executa o console do kibana ');
 
 	};
 

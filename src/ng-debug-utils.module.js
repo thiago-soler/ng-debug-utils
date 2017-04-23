@@ -1,3 +1,5 @@
 'use strict';
 
-angular.module('ngDebugUtils', []);
+angular.module('ngDebugUtils', [
+	'ngModuleExample.debug'
+]);
