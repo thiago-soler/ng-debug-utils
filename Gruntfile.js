@@ -15,9 +15,10 @@ module.exports = function (grunt) {
     require('time-grunt')(grunt);
 
     // // Automatically load required Grunt tasks
-    // require('jit-grunt')(grunt, {
-    //     useminPrepare: 'grunt-usemin'
-    // });
+    // Automatically load required Grunt tasks
+    require('jit-grunt')(grunt, {
+        karma: 'grunt-karma'
+    });
 
     // Configurable paths for the application
     var appConfig = {
@@ -46,6 +47,14 @@ module.exports = function (grunt) {
 
                 }
             
+            },
+
+            jsTest: {
+                
+                files: ['src/**/**.spec.js'],
+                // tasks: ['newer:jshint:test', 'newer:jscs:test', 'karma']
+                tasks: ['karma']
+
             },
 
             gruntfile: {
@@ -215,7 +224,19 @@ module.exports = function (grunt) {
         
             }
         
-        }
+        },
+
+        // Test settings
+        karma: {
+            
+            unit: {
+            
+                configFile: 'karma.conf.js',
+                singleRun: true
+            
+            }
+
+        },
 
 
 
@@ -234,5 +255,9 @@ module.exports = function (grunt) {
             'watch'
         ]);
     });
+
+    grunt.registerTask('test', [
+        'karma'
+    ]);
 
 };

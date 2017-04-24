@@ -8,7 +8,7 @@ angular.module('ngDebugUtils.debug', ['ngDebugUtils']).service('kibana', functio
 
 		console.warn('Executa o console do kibana ');
 
-	};
+	}; 
 
 
 });
