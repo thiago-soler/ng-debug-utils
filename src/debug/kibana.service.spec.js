@@ -1,19 +1,25 @@
 'use strict';
 
-describe('Service: amwebUtils', function () {
+describe('Service: kibana', function () {
 
   // load the service's module
-  beforeEach(module('feDomainPanelSaleApp'));
+  beforeEach(module('ngDebugUtils'));
 
   // instantiate service
-  var amwebUtils;
-  beforeEach(inject(function (_amwebUtils_) {
-    amwebUtils = _amwebUtils_;
+  var test;
+  
+
+  beforeEach(inject(function (kibana) {
+    test = kibana;
   }));
 
   it('should do something', function () {
 
-  	console.log('amwebUtils', amwebUtils);
+    // expect(true).toBe(true);
+
   });
+
+  // 	console.log('kibana', _kibana_);
+  // });
 
 });

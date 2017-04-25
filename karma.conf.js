@@ -19,9 +19,9 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js',
-      'src/**/**.module.js',
-      'src/**/**.spec.js'
+      'https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js',
+      'https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-mocks.js',
+      'src/**/**.js'
     ],
 
     // Which plugins to enable
@@ -78,7 +78,7 @@ module.exports = function(config) {
 
     // level of logging
     // possible values: LOG_DISABLE || LOG_ERROR || LOG_WARN || LOG_INFO || LOG_DEBUG
-    logLevel: config.LOG_INFO,
+    logLevel: config.LOG_DEBUG,
 
     // Uncomment the following lines if you are using grunt's server to run the tests
     // proxies: {
